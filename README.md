@@ -17,16 +17,27 @@ This tool calculates the built-in clock delay based on the NTP information provi
  ```
 
 ## usage
+
 ```python
 from accurateClock import Clock
 
 clock = Clock()
 
-print(clock.now())
+# get int unix time
+print("clock.time():{}".format(clock.time()))
+
+# get float unix time
+print("clock.monotonic():{}".format(clock.monotonic()))
+
+# get datetime.datetime
+print("clock.now():{}".format(clock.now()))
+
+# get computer's internal delay
+print("clock.computerTimeDelay:{}".format(clock.computerTimeDelay))
 ```
 
 
-If there is a risk that the computer's internal time delay has changed, you can reset the computer's internal time delay.
+If the amount of delay may have changed, you can reset the computer's internal time delay.
 ```python
 from accurateClock import Clock
 

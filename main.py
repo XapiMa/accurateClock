@@ -1,9 +1,10 @@
 from accurateClock import Clock
 
 clock = Clock()
-print("now:{}".format(clock.now()))
+print("clock.time():{}".format(clock.time()))
+print("clock.monotonic():{}".format(clock.monotonic()))
+print("clock.now():{}".format(clock.now()))
+print("clock.computerTimeDelay:{}".format(clock.computerTimeDelay))
+
 clock.setComputerTimeDelay()
-print("set now delay")
-print("now:{}".format(clock.now()))
-print("delay:{}".format(clock.computerTimeDelay))
 

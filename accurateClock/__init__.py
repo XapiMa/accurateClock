@@ -32,5 +32,9 @@ class Clock:
     def getComputerTimeDelay(self):
         return self.getNtpTime() - datetime.datetime.now().timestamp()
 
-    def now(self):
+    def time(self):
+        return int(self.monotonic())
+    def monotonic(self):
         return datetime.datetime.now().timestamp() + self.computerTimeDelay
+    def now(self):
+        return datetime.datetime.fromtimestamp(self.time())
