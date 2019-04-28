@@ -1,9 +1,9 @@
 # accurateClock
 shows more accurate time than the computer's internal clock.
 
-If you are not using ntp, your computer's internal time may be incorrect.
-This tool shows more accurate time than the computer's internal clock.
-It calculates the built-in clock delay based on the NTP information provided by NICT and provides more accurate UNIX time.
+If your computer does not use ntp, your computer's internal time may be incorrect.
+This tool provide more accurate time than the computer's internal clock.
+It calculates the computer's internal clock delay based on the NTP information provided by NICT and provides accurate UNIX time.
 
 ## installation
  ```
