@@ -1,5 +1,5 @@
 # accurateClock
-hows more accurate time than the computer's internal clock.
+shows more accurate time than the computer's internal clock.
 
 If you are not using ntp, your computer's internal time may be incorrect.
 This tool shows more accurate time than the computer's internal clock.
