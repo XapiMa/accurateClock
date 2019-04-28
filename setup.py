@@ -2,7 +2,7 @@ import setuptools
  
 setuptools.setup(
     name="accurateClock",
-    version="1.1",
+    version="1.1.2",
     author="Naoki Harima",
     author_email="hurry4170@gmail.com",
     description="accurateClock provide accurate time",

@@ -29,8 +29,13 @@ class Clock:
         dataTime = data["st"]
         return dataTime - latency
 
-    def getComputerTimeDelay(self):
+    def getSingleComputerTimeDelay(self):
         return self.getNtpTime() - datetime.datetime.now().timestamp()
+
+    def getComputerTimeDelay(self):
+        delays = [self.getSingleComputerTimeDelay() for i in range(5)]
+        delays.sort()
+        return delays[2]
 
     def time(self):
         return int(self.monotonic())
